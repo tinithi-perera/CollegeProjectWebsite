@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | College Project Management</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css\style.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-card">
+
+            <div class="text-center mb-4">
+                <h1>Create Account</h1>
+                <p>Join the College Project Management System</p>
+            </div>
+
+            <form id="registerForm">
+
+                <!-- Full Name -->
+                <div class="mb-3">
+                    <label for="studentName" class="form-label">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="studentName"
+                        placeholder="Enter your full name"
+                        required>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+                <!-- Contact Number -->
+                <div class="mb-3">
+                    <label for="contactNo" class="form-label">
+                        Contact Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        class="form-control"
+                        id="contactNo"
+                        placeholder="Enter your 10-digit contact number"
+                        pattern="[0-9]{10}"
+                        required>
+                </div>
+
+                <!-- Password -->
+                <div class="mb-3">
+                    <label for="password" class="form-label">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        placeholder="Create a password"
+                        required>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">
+                        Confirm Password
+                    </label>
+
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="confirmPassword"
+                        placeholder="Confirm your password"
+                        required>
+                </div>
+
+                <!-- Register Button -->
+                <button type="submit" class="btn btn-primary w-100">
+                    Create Account
+                </button>
+
+            </form>
+
+            <div class="text-center mt-4">
+                <p>
+                    Already have an account?
+                    <a href="login.html">Login</a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
