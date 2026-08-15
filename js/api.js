@@ -34,4 +34,35 @@ async function getAllUsers() {
     }
 }
 
+
+
+async function getAllProjects() {
+    try {
+        console.log("Getting projects...");
+
+        const response = await fetch(
+            "https://api.freeprojectapi.com/api/CollegeProject/getAllProjects"
+        );
+
+        console.log("Project status:", response.status);
+        console.log("Project status text:", response.statusText);
+
+        const text = await response.text();
+
+        console.log("Project raw response:", text);
+
+        if (!response.ok) {
+            throw new Error(`Project API error: ${response.status}`);
+        }
+
+        const data = JSON.parse(text);
+
+        console.log("Projects:", data);
+
+    } catch (error) {
+        console.error("GetAllProjects error:", error);
+    }
+}
+
 getAllUsers();
+getAllProjects();
